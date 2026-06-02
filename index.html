@@ -11,6 +11,8 @@
       margin: 0;
       width: 100%;
       min-height: 100dvh;
+
+      font-family: sans-serif;
     }
 
     h1 {
@@ -49,7 +51,25 @@
         }
       }
 
-      
+      & h1,
+      ul>li {
+        padding-inline: .5rem;
+      }
+
+      @media (max-width: 768px) {
+
+        & h1,
+        ul,
+        ul>li {
+          display: block;
+        }
+
+        & h1,
+        ul>li {
+          padding-inline: 0;
+          padding-block: .5rem;
+        }
+      }
     }
   </style>
 </head>
