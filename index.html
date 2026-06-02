@@ -29,8 +29,6 @@
       &:hover {
         text-decoration: underline;
       }
-
-      ;
     }
 
     ul {
@@ -40,7 +38,7 @@
     nav {
       display: flex;
 
-      position: fixed;
+      position: sticky;
       inset: 0;
       inset-block-end: auto;
 
@@ -82,18 +80,51 @@
         }
       }
     }
+
+    main {
+      display: flex;
+
+      padding: 1rem;
+    }
   </style>
 </head>
 
 <body>
-  <nav>
-    <h1>Brand</h1>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Contact</a></li>
-      <li><a href="">About Us</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <h1><span>Brand</span></h1>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <header>
+          <h1>Using semantic HTML and Flex</h1>
+          <address>
+            <a href="">Ryan Suhartanto</a>
+          </address>
+          <p>Published on: <time datetime="2026-06-02">June 2, 2026</time></p>
+        </header>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias labore unde temporibus magni enim quod nam tempora explicabo. Cupiditate tempore placeat quia harum doloribus culpa eligendi laborum, facere vero molestias?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias impedit ipsum a culpa delectus? Dolore, adipisci quos. Quidem nulla optio voluptas illo culpa. Culpa quasi eum doloribus, ipsum eveniet cupiditate.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, rerum temporibus quidem totam natus at impedit minus similique molestias dolores facere quae est veritatis voluptatibus nisi porro id optio quisquam!
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptas id sequi nisi consectetur incidunt hic? Dignissimos ut aliquam voluptatibus earum, itaque cumque quae sit ex quas vero, vel laborum.
+        </p>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>
