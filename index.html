@@ -27,6 +27,8 @@
     }
 
     nav {
+      display: flex;
+      
       position: fixed;
       inset: 0;
       inset-block-end: auto;
@@ -34,36 +36,28 @@
       padding-inline: 1rem;
       padding-block: .5rem;
 
+      gap: 1rem;
+
       color: white;
       background-color: red;
 
       & ul {
+        display: flex;
+
         padding: 0;
-      }
 
-      & h1,
-      ul,
-      ul>li {
-        display: inline-block;
-      }
+        gap: 1rem;
 
-      & h1,
-      ul>li {
-        padding-inline: .5rem;
+        & > li {
+          display: inline-block;
+        }
       }
 
       @media (max-width: 768px) {
+        flex-direction: column;
 
-        & h1,
-        ul,
-        ul>li {
-          display: block;
-        }
-
-        & h1,
-        ul>li {
-          padding-inline: 0;
-          padding-block: .5rem;
+        & ul {
+          flex-direction: column;
         }
       }
     }
