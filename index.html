@@ -22,13 +22,24 @@
       font-weight: inherit;
     }
 
+    a {
+      color: inherit;
+      text-decoration: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      ;
+    }
+
     ul {
       margin: 0;
     }
 
     nav {
       display: flex;
-      
+
       position: fixed;
       inset: 0;
       inset-block-end: auto;
@@ -43,7 +54,10 @@
       background-color: red;
 
       & h1 {
-        font-size: larger;;
+        font-size: larger;
+
+        pointer-events: none;
+        user-select: none;
       }
 
       & ul {
@@ -53,7 +67,7 @@
 
         gap: 1rem;
 
-        & > li {
+        &>li {
           display: inline-block;
         }
       }
@@ -75,9 +89,9 @@
   <nav>
     <h1>Brand</h1>
     <ul>
-      <li>Home</li>
-      <li>Contact</li>
-      <li>About Us</li>
+      <li><a href="">Home</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Us</a></li>
     </ul>
   </nav>
 </body>
