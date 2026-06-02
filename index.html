@@ -33,13 +33,17 @@
       inset: 0;
       inset-block-end: auto;
 
-      padding-inline: 1rem;
-      padding-block: .5rem;
+      padding: 1rem;
 
       gap: 1rem;
+      align-items: center;
 
       color: white;
       background-color: red;
+
+      & h1 {
+        font-size: larger;;
+      }
 
       & ul {
         display: flex;
@@ -55,6 +59,8 @@
 
       @media (max-width: 768px) {
         flex-direction: column;
+
+        align-items: unset;
 
         & ul {
           flex-direction: column;
